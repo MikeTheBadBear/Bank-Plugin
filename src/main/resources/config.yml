@@ -1,0 +1,4 @@
+interest-rate: 0.01
+interest-interval: 3600
+storage-fee: 10.0
+storage-limit: 50

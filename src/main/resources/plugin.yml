@@ -1,0 +1,26 @@
+name: BankPlugin
+version: 1.1
+main: com.bank.bank.BankPlugin
+api-version: 1.21
+depend: [Vault]
+softdepend: [Citizens]
+commands:
+  bank:
+    description: Bank commands
+    usage: /bank <deposit|withdraw|balance|reload|setinterest|depositexp|withdrawexp|expbalance|depositallxp|setnpc>
+    permission: bank.use
+permissions:
+  bank.use:
+    default: true
+  bank.admin:
+    default: op
+  bank.admin.setnpc:
+    default: op
+  bank.exp.deposit:
+    default: true
+  bank.exp.withdraw:
+    default: true
+  bank.exp.balance:
+    default: true
+  bank.exp.depositall:
+    default: true
